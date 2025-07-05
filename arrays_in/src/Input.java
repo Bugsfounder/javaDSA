@@ -7,6 +7,7 @@ public class Input {
 
         Scanner sc = new Scanner(System.in);
 
+        // array of primitives
         int[] arr = new int[5];
         arr[0] = 43;
         arr[1] = 54;
@@ -39,6 +40,18 @@ public class Input {
         System.out.println();
         // easiest way to print an array
         System.out.println(Arrays.toString(arr));
+
+        System.out.println("array of objects");
+        // array of objects
+        String[] str = new String[4];
+        for (int i = 0; i < str.length; i++) {
+            str[i] = sc.next();
+        }
+        System.out.println(Arrays.toString(str));
+
+        // modify
+        str[1] = "Manisha";
+        System.out.println(Arrays.toString(str));
     }
 
 }
