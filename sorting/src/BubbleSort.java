@@ -1,7 +1,6 @@
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
-public class Main {
+public class BubbleSort {
     public static void bubbleSort(int[] arr){
         boolean swap = false;
         for (int i = 0; i < arr.length; i++){
