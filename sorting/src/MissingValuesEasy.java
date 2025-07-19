@@ -69,3 +69,9 @@ public class MissingValuesEasy {
         System.out.println(res1);
     }
 }
+
+/*
+take the index of minimum number
+then start searching for max number after this index
+then return max - min
+ */

@@ -12,7 +12,7 @@ public class SetMismatch {
                 i++;
             }
         }
-
+ 
         int[] duplicate = new int[2];
         for (int j = 0; j < arr.length; j++) {
             if (j != arr[j] - 1) {
