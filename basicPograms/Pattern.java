@@ -13,5 +13,16 @@ public class Pattern {
             }
             System.out.println();
         }
+
+        int i = 0;
+        while (i < n) {
+            int j = 0;
+            while (j < n - i) {
+                System.out.print("*");
+                j++;
+            }
+            i++;
+            System.out.println();
+        }
     }
 }
