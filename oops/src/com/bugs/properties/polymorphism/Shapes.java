@@ -1,7 +1,7 @@
 package com.bugs.properties.polymorphism;
 
 public class Shapes {
-    void area(){
+    final void area(){
         System.out.println("I am a shape");
     }
 
