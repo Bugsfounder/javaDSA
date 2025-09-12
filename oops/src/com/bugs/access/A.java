@@ -2,7 +2,10 @@ package com.bugs.access;
 
 public class A {
 
-    int num;
+    // if no access modifier specified, then the properties cannot be accessed outside the package
+//    int num;
+//    private  num;
+    protected int num;
     String name;
     int[] arr;
 
