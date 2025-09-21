@@ -2,13 +2,22 @@
 package com.bugs.generics;
 
 
-public class CustomGenericArrayList<T extends Number > {
+import java.util.List;
+
+// here T should either be Number or its subClasses
+public class WildCardExample<T extends Number > {
+//public class WildCardExample<T extends Integer > { // more type safety
     private Object[] data;
     private static int DEFAULT_SIZE = 10;
     private int size = 0;
 
-    public CustomGenericArrayList(){
+    public WildCardExample(){
         this.data = new Object[DEFAULT_SIZE];
+
+    }
+
+    public void getList(List<? extends Number> list){
+        // do something
 
     }
 
@@ -75,7 +84,7 @@ public class CustomGenericArrayList<T extends Number > {
 //        list.set(0,32);
 //        list.size();
 
-        CustomGenericArrayList list = new CustomGenericArrayList();
+        WildCardExample list = new WildCardExample();
         list.add(3);
         list.add(5);
         list.add(9);
@@ -87,8 +96,9 @@ public class CustomGenericArrayList<T extends Number > {
 //        }
 
 
-        CustomGenericArrayList<Integer> list3 = new CustomGenericArrayList<>();
-        list3.add(43);
+//        WildCardExample<Integer> list3 = new WildCardExample<>();
+//        list3.add(43);
+        WildCardExample<Float> list3 = new WildCardExample<>();
 //        CustomGenericArrayList<String> list4 = new CustomGenericArrayList<>(); // not allowed
 //        list4.add("Manisha");
         System.out.println(list3);
